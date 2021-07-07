@@ -1,5 +1,6 @@
 package com.qa.test;
 
+import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -43,8 +44,9 @@ public class CandidatesTest {
 	}
 
 	@Test(dataProvider = "getCandidatesData")
-	public void createCandidatesTest(String firstName, String lastName, String emailId) {
-		candidatesPage.addCandidate(firstName, lastName, emailId);
+	public void createCandidatesTest(String firstName, String middleName, String lastName, String emailId,
+			String contactNo, String jobVacancy) {
+		candidatesPage.addCandidate(firstName, middleName, lastName, emailId, contactNo, jobVacancy);
 
 	}
 

@@ -1,33 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T08:25:43Z" name="Orange HRM Test Suite" finished-at="2021-05-26T08:27:40Z" duration-ms="116722">
+  <suite started-at="2021-07-05T18:18:02 IST" name="Orange HRM Test Suite" finished-at="2021-07-05T18:19:36 IST" duration-ms="93828">
     <groups>
     </groups>
-    <test started-at="2021-05-26T08:25:43Z" name="Test" finished-at="2021-05-26T08:27:40Z" duration-ms="116722">
-      <class name="com.qa.test.DashBoardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:25:43Z" name="setUp" finished-at="2021-05-26T08:26:57Z" duration-ms="73782" status="PASS">
+    <test started-at="2021-07-05T18:18:02 IST" name="Test" finished-at="2021-07-05T18:19:36 IST" duration-ms="93828">
+      <class name="com.qa.test.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:02 IST" name="setUp" finished-at="2021-07-05T18:18:27 IST" duration-ms="25290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDashBoardHeaderTest()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:26:57Z" name="verifyDashBoardHeaderTest" finished-at="2021-05-26T08:26:59Z" duration-ms="2237" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:27 IST" name="loginPageTitleTest" finished-at="2021-07-05T18:18:27 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDashBoardHeaderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:26:59Z" name="tearDown" finished-at="2021-05-26T08:27:03Z" duration-ms="4209" status="PASS">
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:28 IST" name="tearDown" finished-at="2021-07-05T18:18:29 IST" duration-ms="1333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:27:03Z" name="setUp" finished-at="2021-05-26T08:27:38Z" duration-ms="35143" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:29 IST" name="setUp" finished-at="2021-07-05T18:18:39 IST" duration-ms="9997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDashBoardPageTitleTest()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:27:38Z" name="verifyDashBoardPageTitleTest" finished-at="2021-05-26T08:27:38Z" duration-ms="11" status="PASS">
+        <test-method signature="forgotPwdLinkTest()[pri:2, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:39 IST" name="forgotPwdLinkTest" finished-at="2021-07-05T18:18:39 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:39 IST" name="tearDown" finished-at="2021-07-05T18:18:40 IST" duration-ms="1312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:40 IST" name="setUp" finished-at="2021-07-05T18:18:48 IST" duration-ms="8128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login_correctData_Test()[pri:3, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:48 IST" name="login_correctData_Test" finished-at="2021-07-05T18:18:56 IST" duration-ms="8029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_correctData_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.LoginTest@7fb4f2a9]" started-at="2021-07-05T18:18:56 IST" name="tearDown" finished-at="2021-07-05T18:18:57 IST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.LoginTest -->
+      <class name="com.qa.test.DashBoardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:18:57 IST" name="setUp" finished-at="2021-07-05T18:19:13 IST" duration-ms="15716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashBoardHeaderTest()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:19:13 IST" name="verifyDashBoardHeaderTest" finished-at="2021-07-05T18:19:14 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashBoardHeaderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:19:14 IST" name="tearDown" finished-at="2021-07-05T18:19:15 IST" duration-ms="1164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:19:15 IST" name="setUp" finished-at="2021-07-05T18:19:35 IST" duration-ms="20094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashBoardPageTitleTest()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:19:35 IST" name="verifyDashBoardPageTitleTest" finished-at="2021-07-05T18:19:35 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashBoardPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.DashBoardTest@12c7a01b]" started-at="2021-05-26T08:27:39Z" name="tearDown" finished-at="2021-05-26T08:27:40Z" duration-ms="1268" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.DashBoardTest@15d49048]" started-at="2021-07-05T18:19:35 IST" name="tearDown" finished-at="2021-07-05T18:19:36 IST" duration-ms="1168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -2,11 +2,11 @@ package com.qa.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.BasePage;
+import com.qa.util.TestUtil;
 
 public class DashBoard extends BasePage {
 
@@ -25,6 +25,9 @@ public class DashBoard extends BasePage {
 	@FindBy(id = "menu_pim_addEmployee")
 	private WebElement addEmployeTab;
 
+	@FindBy(xpath = "//a[.='Vacancies']")
+	private WebElement vacancyTab;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -39,17 +42,23 @@ public class DashBoard extends BasePage {
 	}
 
 	public CandidatesPage gotoCandidatesPage() {
-		Actions action = new Actions(driver);
-		action.moveToElement(recruitmentTab).build().perform();
+		TestUtil.mouseHover(driver, recruitmentTab);
 		candidatesTab.click();
 		return new CandidatesPage(driver);
 	}
 
 	public EmployeePage goEmloyeePage() {
 
-		Actions action=new Actions(driver);
-		action.moveToElement(pimTab).build().perform();
+//		Actions action = new Actions(driver);
+//		action.moveToElement(pimTab).build().perform();
+		TestUtil.mouseHover(driver, pimTab);
 		addEmployeTab.click();
 		return new EmployeePage(driver);
+	}
+
+	public VacancyPage gotoVacancyPage() {
+		TestUtil.mouseHover(driver, recruitmentTab);
+		vacancyTab.click();
+		return new VacancyPage(driver);
 	}
 }
