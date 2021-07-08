@@ -1,6 +1,5 @@
 package com.qa.test;
 
-import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
